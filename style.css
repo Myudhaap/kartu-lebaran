@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*, *::after, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Satisfy", cursive;
+}
+
+.card{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFF9D;
+}
+
+.card-ketupat{
+    transform: rotate(45deg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .15rem;
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 4rem;
+}
+
+.card-ketupat .ketupat-square{
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.card-ketupat .ketupat-square:nth-child(odd){
+    background-color: #0BA20A;
+}
+
+.card-ketupat .ketupat-square:nth-child(even){
+    background-color: #72BE20;
+}
+
+.card-quotes{
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
